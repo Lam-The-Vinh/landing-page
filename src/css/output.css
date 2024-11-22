@@ -632,6 +632,10 @@ video {
   margin-top: 162px;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -941,6 +945,10 @@ video {
     grid-row: span 2 / span 2;
   }
 
+  .lg\:mt-\[162px\] {
+    margin-top: 162px;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -1051,6 +1059,15 @@ video {
     line-height: 1.75rem;
   }
 
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-\[32px\] {
+    font-size: 32px;
+  }
+
   .xl\:leading-\[23px\] {
     line-height: 23px;
   }
@@ -1065,5 +1082,9 @@ video {
 
   .xl\:leading-\[57\.6px\] {
     line-height: 57.6px;
+  }
+
+  .xl\:leading-\[18\.4px\] {
+    line-height: 18.4px;
   }
 }
