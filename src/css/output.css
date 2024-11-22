@@ -588,32 +588,16 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-start-2 {
-  grid-column-start: 2;
-}
-
-.col-start-1 {
-  grid-column-start: 1;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
 .row-start-2 {
   grid-row-start: 2;
 }
 
-.row-start-1 {
-  grid-row-start: 1;
-}
-
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
@@ -626,10 +610,6 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .mt-3 {
@@ -652,8 +632,8 @@ video {
   margin-top: 162px;
 }
 
-.mt-\[75\.25px\] {
-  margin-top: 75.25px;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -676,20 +656,12 @@ video {
   height: 44px;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-full {
   height: 100%;
 }
 
 .max-h-\[340px\] {
   max-height: 340px;
-}
-
-.max-h-full {
-  max-height: 100%;
 }
 
 .min-h-\[164px\] {
@@ -708,10 +680,6 @@ video {
   width: 310px;
 }
 
-.w-\[612px\] {
-  width: 612px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -720,36 +688,8 @@ video {
   max-width: 824px;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .flex-wrap {
@@ -758,10 +698,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -776,12 +712,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .border {
@@ -827,8 +763,8 @@ video {
      object-fit: cover;
 }
 
-.p-24 {
-  padding: 6rem;
+.p-12 {
+  padding: 3rem;
 }
 
 .p-3 {
@@ -839,38 +775,14 @@ video {
   padding: 1.5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-\[48px\] {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.py-\[98px\] {
-  padding-top: 98px;
-  padding-bottom: 98px;
-}
-
-.pl-\[130px\] {
-  padding-left: 130px;
 }
 
 .pr-12 {
@@ -885,10 +797,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.pr-\[96px\] {
-  padding-right: 96px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -898,11 +806,6 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -910,6 +813,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -966,14 +874,6 @@ video {
   line-height: 36.8px;
 }
 
-.leading-\[43\.2px\] {
-  line-height: 43.2px;
-}
-
-.leading-\[57\.6px\] {
-  line-height: 57.6px;
-}
-
 .text-dark-blue {
   color: rgba(23, 44, 55, 1);
 }
@@ -1015,51 +915,76 @@ video {
   opacity: 0.95;
 }
 
-.dash {
-  width: 6px;
-  height: 21px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20.7px;
-  text-align: right;
-}
-
 .number {
-  width: 21px;
-  height: 21px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20.7px;
   text-align: right;
 }
 
-@media (min-width: 1280px) {
-  .xl\:col-span-1 {
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
 
-  .xl\:col-span-2 {
+  .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
-  .xl\:col-start-2 {
-    grid-column-start: 2;
-  }
-
-  .xl\:row-span-2 {
+  .lg\:row-span-2 {
     grid-row: span 2 / span 2;
   }
 
-  .xl\:row-start-2 {
-    grid-row-start: 2;
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .xl\:mt-36 {
     margin-top: 9rem;
   }
 
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .xl\:mt-\[197px\] {
     margin-top: 197px;
+  }
+
+  .xl\:mt-\[75\.25px\] {
+    margin-top: 75.25px;
   }
 
   .xl\:mt-\[85px\] {
@@ -1070,24 +995,40 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .xl\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:flex-col {
-    flex-direction: column;
-  }
-
   .xl\:gap-\[206px\] {
     gap: 206px;
+  }
+
+  .xl\:p-24 {
+    padding: 6rem;
+  }
+
+  .xl\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:py-98px {
+    padding-top: 98px;
+    padding-bottom: 98px;
+  }
+
+  .xl\:pl-\[130px\] {
+    padding-left: 130px;
+  }
+
+  .xl\:pr-\[96px\] {
+    padding-right: 96px;
   }
 
   .xl\:text-2xl {
@@ -1095,8 +1036,34 @@ video {
     line-height: 2rem;
   }
 
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:leading-\[23px\] {
+    line-height: 23px;
+  }
+
+  .xl\:leading-\[27\.6px\] {
+    line-height: 27.6px;
+  }
+
+  .xl\:leading-\[43\.2px\] {
+    line-height: 43.2px;
+  }
+
+  .xl\:leading-\[57\.6px\] {
+    line-height: 57.6px;
   }
 }

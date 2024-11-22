@@ -18,6 +18,9 @@ module.exports = {
         "sub-orange": "rgba(178, 144, 99, 1)",
         "bg-sub-orange": "rgba(215, 196, 169, 0.9)",
       },
+      padding: {
+        "98px": "98px",
+      },
     },
   },
   plugins: [],

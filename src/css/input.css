@@ -2,17 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.dash {
-  width: 6px;
-  height: 21px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20.7px;
-  text-align: right;
-}
 .number {
-  width: 21px;
-  height: 21px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20.7px;
